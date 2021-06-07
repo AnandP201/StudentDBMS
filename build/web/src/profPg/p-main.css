@@ -1,0 +1,231 @@
+*
+{
+  margin: 0;
+}
+body
+{
+  background-size: 100%;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+}
+.u_det
+{
+  position: relative;
+  top: 25px;
+  right:70px;
+  font-size: 24px;
+  font-family: "Nixie One",cursive;
+  text-align: center;
+  height: 20px;
+}
+.title-bar
+{
+  display: flex;
+  background: #FFD57E;
+  height: 60px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+}
+.title
+{
+  position: relative;
+  left: 80px;
+  margin: 0 auto;
+  top: 15px;
+  font-weight: bold;
+  font-size: 38px;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.45);
+  font-family: "Nixie One",cursive;
+}
+#user-name
+{
+    position: relative;
+    left: -100px;
+    top: 20px;
+    background:#AC4B1C;
+    padding: 5px;
+    height: 20px;
+    color:white;
+    border-radius: 5px;
+}
+#user-name:hover
+{
+    cursor:not-allowed;
+}
+.home
+{
+  position: relative;
+  top: 10px;
+  text-align: center;
+  left: -40px;
+  background: #AC4B1C;
+  border-radius: 50%;
+  height: 45px;
+  font-size: 24px;
+  width: 45px;
+}
+.home i
+{
+    position: relative;
+    top: 8px;
+}
+.home:hover
+{
+   cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+}
+.home:active
+{
+    background: white;
+  box-shadow: none;
+}
+.settings
+{
+  position: relative;
+  top: 10px;
+  right:20px;
+  text-align: center;
+  background: #AC4B1C;
+  border-radius: 50%;
+  height: 45px;
+  font-size: 24px;
+  width: 45px;
+}
+.settings:hover
+{
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+}
+.dp
+{
+    position: absolute;
+    top:120px;
+    right:150px;
+    width:200px;
+    text-align: center;
+    border: 2px solid #ffd57e;
+    height: 200px;
+}
+.settings:active
+{
+  background: white;
+  box-shadow: none;
+}
+.settings .fa
+{
+  position: relative;
+  top: 10px;
+}
+.settings-menu
+{
+  border: 2px solid #AC4B1c;
+  position: absolute;
+  right: 5px;
+  top:80px;
+  z-index: 1;
+  font-size: 14px;
+  font-family: "Noto Sans JP",sans-serif;
+  padding: 5px;
+  background: white;
+  width: 150px;
+  border-radius: 5%;
+}
+.settings-menu ul
+{
+  list-style: none;
+}
+li a
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+li i
+{
+  position: absolute;
+  left: 20px;
+  margin-top: 5px;
+}
+.settings-menu ul li
+{
+  margin-top: 5px;
+  padding: 5px;
+}
+.settings-menu ul li:hover
+{
+  cursor: pointer;
+  background: #FFD57E;
+  transition: all 0.7s ease;
+}
+.l
+{
+  position: relative;
+  top: 350px;
+  font-size: 12px;
+  color: blue;
+  font-weight: bold;
+}
+.col
+{
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  background: white;
+  border-top: 5px solid #FFD57E;
+   border-bottom: 5px solid #FFD57E;
+  box-shadow: 0px 6px 6px rgba(0,0,0,0.5);
+  height: 550px;
+  width: 74%;
+  margin-left: 200px;
+  top:120px;
+  justify-content: space-between;
+}
+.prompt
+{
+  position: absolute;
+  margin-top: 350px;
+  display: none;
+  font-family: "Nixie One",cursive;
+  font-size: 48px;
+  color:white;
+  margin-left: 70px;
+  text-shadow: 4px 4px 4px rgba(255,0,0,0.8);
+}
+.u_img
+{
+  width: 90px;
+  height: 90px;
+  background: #FFD57E;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+}
+.profile_table
+{
+  font-family : "Noto Sans JP",sans-serif;
+  overflow-y: auto;
+  height: 400px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 20px;
+}   
+.user_name
+{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Nixie One",cursive;
+  font-weight: bolder;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  margin-top: 5px;
+}

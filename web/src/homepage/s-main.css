@@ -1,0 +1,425 @@
+*
+{
+ margin:0;
+}
+body
+{
+  background-size: 100%;
+}
+.overlay
+{
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+}
+.title-bar
+{
+  display: flex;
+  background: #FFD57E;
+  height: 60px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+}
+.title
+{
+  position: relative;
+  left: 40px;
+  margin: 0 auto;
+  top: 15px;
+  font-weight: bold;
+  font-size: 38px;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.45);
+  font-family: "Nixie One",cursive;
+}
+#user-name
+{
+    position: relative;
+    left: -100px;
+    top: 20px;
+    background:#AC4B1C;
+    padding: 5px;
+    height: 20px;
+    color:white;
+    border-radius: 5px;
+}
+#user-name:hover
+{
+    cursor:not-allowed;
+}
+.home
+{
+  position: relative;
+  top: 10px;
+  text-align: center;
+  left: -40px;
+  background: #AC4B1C;
+  border-radius: 50%;
+  height: 45px;
+  font-size: 24px;
+  width: 45px;
+}
+.home i
+{
+    position: relative;
+    top: 8px;
+}
+.home:hover
+{
+   cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+}
+.home:active
+{
+    background: white;
+  box-shadow: none;
+}
+.settings
+{
+  position: relative;
+  top: 10px;
+  right:20px;
+  text-align: center;
+  background: #AC4B1C;
+  border-radius: 50%;
+  height: 45px;
+  font-size: 24px;
+  width: 45px;
+}
+.settings:hover
+{
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+}
+.settings:active
+{
+  background: white;
+  box-shadow: none;
+}
+.settings .fa
+{
+  position: relative;
+  top: 10px;
+}
+.settings-menu
+{
+  border: 2px solid #AC4B1c;
+  position: absolute;
+  right: 5px;
+  top:80px;
+  z-index: 1;
+  font-size: 14px;
+  font-family: "Noto Sans JP",sans-serif;
+  padding: 5px;
+  background: white;
+  width: 150px;
+  border-radius: 5%;
+}
+.settings-menu ul
+{
+  list-style: none;
+}
+li a
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+li i
+{
+  position: absolute;
+  left: 20px;
+  margin-top: 5px;
+}
+.settings-menu ul li
+{
+  margin-top: 5px;
+  padding: 5px;
+}
+.settings-menu ul li:hover
+{
+  cursor: pointer;
+  background: #FFD57E;
+  transition: all 0.7s ease;
+}
+.l
+{
+  position: relative;
+  top: 350px;
+  font-size: 12px;
+  color: blue;
+  font-weight: bold;
+}
+.col
+{
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  background: white;
+  border-top: 5px solid #FFD57E;
+  border-bottom: 5px solid #FFD57E;
+  box-shadow: 0px 6px 6px rgba(0,0,0,0.5);
+  height: 550px;
+  top: 120px;
+  width: 74%;
+  margin-left: 200px;
+}
+#information
+{
+ position: relative;
+ font-family: "Noto Sans JP",sans-serif;
+ font-weight: bold;
+ font-size: 12px;
+ border-radius: 10px;
+ background: yellow;
+ padding: 5px;
+ top: 70px;
+ left: 40px;
+}
+.select_table
+{
+    position: relative;
+   text-align: center;
+    font-family: "Noto Sans JP",sans-serif;
+}
+
+select
+{
+    margin-top: 20px;
+    font-family: "Noto Sans JP",sans-serif;
+    outline:0;
+    padding: 4px;
+    cursor: pointer;
+    background: #ffd57e;
+    border: 2px solid #ffd57e;
+}
+select option
+{
+   cursor:pointer;
+}
+.fn_title
+{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Nixie One",cursive;
+}
+table
+{
+    position: relative;
+    margin: 0 auto;
+    font-size: 13px;
+    font-family: "Noto Sans JP",sans-serif;
+    border-collapse: collapse;
+}
+#sList tr:nth-child(1)
+{
+    font-weight: bold;
+    background-color: #FFD57E;
+}
+.table_view
+{
+    align-content: center;
+    z-index: 0;
+    margin-top: 100px;
+    padding: 10px;
+    overflow: auto;
+}
+.warning
+{
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    background: red;
+}
+.gen
+{
+    cursor:pointer;
+    font-weight: bold;
+}
+.al_g
+{
+    background: #AC4B1C;
+    cursor:default;
+    color:white;
+}
+.gen_d
+{
+    background: #AC4B1C;
+    cursor: not-allowed;
+    color: white;
+}
+.col_register
+{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 600px;
+    background: white;
+    transition: all 0.5s;
+    text-align: center;
+    border: 1px solid black;
+    z-index:2;
+    width: 350px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.45);
+    border: 2px solid #ffd57e;
+    border-radius: 10px;
+}
+.col_register_title
+{
+    font-family: "Nixie One",cursive;
+}
+.register_student_btn
+{
+    background-color: #AC4B1C;
+    padding: 3px;
+    color: white;
+    cursor:pointer;
+}
+.back_btn
+{
+    background-color: #AC4B1C;
+    padding: 3px;
+    color: white;
+    cursor:pointer;
+}
+.section1
+{
+    text-align: left;
+    font-family: "Noto Sans JP",sans-serif;
+}
+.section1 table
+{
+    text-align: left;
+    margin-left: 20px;
+  
+}
+.section1 table input
+{
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+.Leaveoptions
+{
+    font-family: "Noto Sans JP",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.Leaveoptions input
+{
+    margin-left: 40px;
+}
+.Leaveoptions input:hover
+{
+    cursor:pointer;
+}
+#leavepurpose
+{
+    margin-top: 1px;
+    resize:none;
+    outline:none;
+    height: 50px;
+}
+#apply_btn
+{
+    position: relative;
+    border: 1px solid black;
+    margin-left: 500px;
+    font-size: 12px;
+    background: #AC4B1C;
+    color:white;
+    padding: 3px;
+}
+#apply_btn:hover
+{
+    cursor:pointer;
+}
+.section2
+{
+    margin-top: 20px;
+    overflow: auto;
+    font-family: "Noto Sans JP",sans-serif;
+    height: 300px;
+    padding: 10px;
+}
+.card
+{
+    border: 3px solid #ffd57e;
+    height: 140px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.card:hover
+{
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.6);
+    cursor:pointer;
+}
+#showleaves_btn
+{
+    position: relative;
+    margin-left: 300px;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 3px;
+}
+#drop_btn
+{
+    position: relative;
+    background: #AC4B1C;
+    border-radius: 5px;
+    left: 1000px;
+    padding: 5px;
+    top: -50px;
+}
+#drop_btn i
+{
+    color: white;
+}
+#drop_btn:hover
+{
+    cursor: pointer;
+}
+#leave_approved
+{
+    position: relative;
+    background: green;
+    left: 500px;
+    padding: 5px;
+    border-radius: 20px;
+    color:white;
+    top: -50px;
+}
+
+#approve_btn
+{
+    background: green;
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#reject_btn
+{
+    background: red;
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#leave_rejected
+{
+    position: relative;
+    background: red;
+    color:white;
+    padding: 5px;
+    font-size: 12px;
+    left: 500px;
+    border-radius: 5px;
+}
